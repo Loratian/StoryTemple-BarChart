@@ -1,12 +1,13 @@
 const tl = gsap.timeline();
 
-export default function BarChart() {
+function BarChart() {
   const tl = gsap.timeline();
   //time_bar loading Animation
-  tl.to("#time_full", 2, {
+  tl.to("#time_full", 5, {
     transformOrigin: "right",
     scaleX: 0,
     ease: "none",
+    delay: 1.5,
 
     //time_bar out Animation
     onComplete: function() {
@@ -133,4 +134,4 @@ export default function BarChart() {
   });
 }
 
-// drawChart();
+BarChart();
