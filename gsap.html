@@ -1,0 +1,258 @@
+<html>
+  <head>
+    <title>Making a Bar Chart</title>
+    <link href="gsap.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+    <script src="https://d3js.org/d3.v5.js"></script>
+  </head>
+  <body>
+    <svg
+      id="INTERACTIVE_SLIDE"
+      data-name="INTERACTIVE SLIDE"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 0 1920 1080"
+    >
+      <g id="Background">
+        <g id="images">
+          <g id="image1">
+            <rect
+              class="select-rect"
+              fill="none"
+              x="0"
+              y="0"
+              width="1920"
+              height="1080"
+            />
+            <image
+              width="1920"
+              height="1080"
+              xlink:href="https://dummyimage.com/32x32/2986b9/2986b9"
+              preserveAspectRatio="xMinYMin slice"
+            />
+          </g>
+        </g>
+        <g id="Shapes">
+          <path
+            d="M-5.17,1080.58c.66.39,321.89,0,322.29,0-92-226-183.54-343.85-322.29-343.26Z"
+            fill="#2b0a3d"
+          />
+          <path
+            d="M1285.48,0c140.69,282.36,558.32,146.34,633.17,355.71q4.06,11.37,6.86,22V.06l-640,0"
+            fill="#2b0a3d"
+          />
+        </g>
+      </g>
+      <g id="titles" fill="transparent">
+        <g id="title">
+          <rect class="select-rect" x="615" y="45" width="700" height="90" />
+          <foreignObject
+            transform="translate(615 45)"
+            width="700"
+            height="90"
+            style="color: #fff; text-align: center; font-size: 80px;"
+          >
+            <div>
+              <p style="margin:0">Interactive Slide</p>
+            </div>
+          </foreignObject>
+        </g>
+      </g>
+      <g id="Vraag_totaal" data-name="Vraag totaal">
+        <g id="WITTE_BACKGROUND" data-name="WITTE BACKGROUND">
+          <rect x="125" y="193" width="1695" height="784" fill="#fff" />
+        </g>
+        <g
+          id="question1"
+          style="fill: transparent;"
+          timetoanswer="0"
+          correctanswer="0"
+        >
+          <rect
+            class="select-rect"
+            x="371.38"
+            y="257.5"
+            width="1200"
+            height="120"
+          />
+          <foreignObject
+            basefontsize="50"
+            transform="translate(371.38 257.5)"
+            width="1200"
+            height="120"
+            style="text-align: center; font-size: 50px; font-weight: 500;"
+          >
+            <div>
+              <p style="margin:0">
+                Here is an awesome question for you. Are you ready to answer?
+              </p>
+            </div>
+          </foreignObject>
+        </g>
+      </g>
+      <svg class="charts" x="125" y="405" width="1695" height="350"></svg>
+      <g id="Antwoorden">
+        <g class="vak" id="answer1" style="fill: transparent;">
+          <rect
+            x="145.1"
+            y="559.21"
+            width="399.26"
+            height="179.05"
+            fill="#2b0a3d"
+            opacity="0.83"
+          />
+          <rect
+            x="145.1"
+            y="529.21"
+            width="399.26"
+            height="179.05"
+            fill="#2b0a3d"
+          />
+          <rect
+            class="select-rect"
+            x="145.1"
+            y="529.21"
+            width="399.26"
+            height="209.05"
+          />
+          <foreignObject
+            transform="translate(160 573)"
+            width="360"
+            height="100"
+            style="text-align: center; color: #fff; font-size: 35px;"
+          >
+            <div>
+              <p style="margin:0">Here is an answer for you number 1</p>
+              <p class="counters" id="counter1"></p>
+            </div>
+          </foreignObject>
+        </g>
+        <g class="vak" id="answer2" style="fill: transparent;">
+          <rect
+            x="562.12"
+            y="559.21"
+            width="399.26"
+            height="179.05"
+            fill="#7e3ab9"
+            opacity="0.83"
+          />
+          <rect
+            x="562.12"
+            y="529.21"
+            width="399.26"
+            height="179.05"
+            fill="#7e3ab9"
+          />
+          <rect
+            class="select-rect"
+            x="562.12"
+            y="529.21"
+            width="399.26"
+            height="209.05"
+          />
+          <foreignObject
+            transform="translate(577 573)"
+            width="360"
+            height="100"
+            style="text-align: center; color: #fff; font-size: 35px;"
+          >
+            <div>
+              <p style="margin:0">Here is an answer for you number 2</p>
+              <p class="counters" id="counter2"></p>
+            </div>
+          </foreignObject>
+        </g>
+        <g class="vak" id="answer3" style="fill: transparent;">
+          <rect
+            x="980.38"
+            y="559.21"
+            width="399.26"
+            height="179.05"
+            fill="#0070ad"
+            opacity="0.83"
+          />
+          <rect
+            x="980.38"
+            y="529.21"
+            width="399.26"
+            height="179.05"
+            fill="#0070ad"
+          />
+          <rect
+            class="select-rect"
+            x="980.38"
+            y="529.21"
+            width="399.26"
+            height="209.05"
+          />
+          <foreignObject
+            transform="translate(995 573)"
+            width="360"
+            height="100"
+            style="text-align: center; color: #fff; font-size: 35px;"
+          >
+            <div>
+              <p style="margin:0">Here is an answer for you number 3</p>
+              <p class="counters" id="counter3"></p>
+            </div>
+          </foreignObject>
+        </g>
+        <g class="vak" id="answer4" style="fill: transparent;">
+          <rect
+            x="1398.64"
+            y="559.21"
+            width="399.26"
+            height="179.05"
+            fill="#12abdb"
+            opacity="0.83"
+          />
+          <rect
+            x="1398.64"
+            y="529.21"
+            width="399.26"
+            height="179.05"
+            fill="#12abdb"
+          />
+          <rect
+            class="select-rect"
+            x="1398.64"
+            y="529.21"
+            width="399.26"
+            height="209.05"
+          />
+          <foreignObject
+            transform="translate(1415 573)"
+            width="360"
+            height="100"
+            style="text-align: center; color: #fff; font-size: 35px;"
+          >
+            <div>
+              <p style="margin:0">Here is an answer for you number 4</p>
+              <p class="counters" id="counter4"></p>
+            </div>
+          </foreignObject>
+        </g>
+        <g id="time_bar">
+          <rect
+            id="time_progress"
+            x="372.5"
+            y="845"
+            width="1200"
+            height="25"
+            fill="#2b0a3d"
+          />
+          <rect
+            id="time_full"
+            x="372.5"
+            y="845"
+            width="1200"
+            height="25"
+            fill="gray"
+          />
+        </g>
+      </g>
+    </svg>
+
+    <script src="gsap.js"></script>
+  </body>
+</html>
